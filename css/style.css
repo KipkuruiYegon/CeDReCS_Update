@@ -6,7 +6,6 @@
 }
 
 
-
 .welcome-div {
   height: 300px;
   background-image: url('https://img.freepik.com/premium-photo/microchip-processing-data-through-computer-motherboard-circuit-with-fully-protection-pad-lock-symbol-3d-rendering-abstract-cyber-security-safety-illustration-cpu-hardware-firewall-technology-concept_44651-576.jpg?w=1380');
@@ -16,112 +15,90 @@
 }
 
 .imgdescribe1 {
-  height: auto;
-  background-image: url('https://img.freepik.com/free-vector/data-protection-concept-composition_1284-10001.jpg?w=740&t=st=1690361928~exp=1690362528~hmac=8400e43478d36625d6e2cc0bc5fc7178831b8890199300f881ead33bd8f9258c');
+  height:200px;
+  width:;
+  background-image: url('https://iptcc.ku.ac.ke/images/2022/huawei/huawei2.png');
   background-size: cover;
   background-position: center;
   opacity: ;
 }
 
 .imgdescribe2 {
-  height: 300px;
-  background-image: url('https://img.freepik.com/free-vector/data-protection-concept-composition_1284-10001.jpg?w=740&t=st=1690361928~exp=1690362528~hmac=8400e43478d36625d6e2cc0bc5fc7178831b8890199300f881ead33bd8f9258c');
+  height: 200px;
+  background-image: url('https://newsroom.cisco.com/c/dam/r/newsroom/en/us/migrated-assets/cisco_corporate_logo_blue2-jpg-1889920-1-0.jpg');
   background-size: cover;
   background-position: center;
   opacity: ;
 }
 
-.imgdescribe3 {
-  height: 300px;
-  background-image: url('https://img.freepik.com/free-vector/data-protection-concept-composition_1284-10001.jpg?w=740&t=st=1690361928~exp=1690362528~hmac=8400e43478d36625d6e2cc0bc5fc7178831b8890199300f881ead33bd8f9258c');
+.imgdescribe4 {
+  height: 200px;
+  background-image: url('https://img.freepik.com/premium-photo/illustration-man-sitting-front-laptop-with-shield-him_684882-223.jpg?w=900');
   background-size: cover;
   background-position: center;
   opacity: ;
 }
 
-.postcommentimages img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.imgdescribe5 {
+  height: 200px;
+  background-image: url('https://img.freepik.com/free-vector/public-people-speaking-from-podium-poster_98292-1833.jpg?size=626&ext=jpg&ga=GA1.1.2133316751.1690546052&semt=sph');
+  background-size: cover;
+  background-position: center;
+  opacity: ;
 }
+
+.imgdescribe6 {
+  height: 200px;
+  background-image: url('https://img.freepik.com/free-vector/business-performance-analysis-with-graphs_53876-66260.jpg?w=900&t=st=1690546226~exp=1690546826~hmac=accf5a407e4eb7d424801fa1d22f9fa9265aacef483679b6baa1d53a39893fb8');
+  background-size: cover;
+  background-position: center;
+  opacity: ;
+}
+.imgdescribe7 {
+  height: 200px;
+  background-image: url('https://img.freepik.com/premium-photo/data-science-artificial-intelligence-concept-futuristic-supercomputer-background_161452-5039.jpg?w=900');
+  background-size: cover;
+  background-position: center;
+  opacity: ;
+}
+.imgdescribeAbout1 {
+  height:auto;
+  
+  background-image: url('https://img.freepik.com/free-photo/abstract-geometric-computer-wallpaper-white-border-connecting-dots-digital-technology-vector-design_53876-160227.jpg?w=1060&t=st=1690564937~exp=1690565537~hmac=74b5b390c1d060faf2dacb0aa636cbeb0a16ff674443cc4889ef4b88292dcd0c');
+  background-size: cover;
+  background-position: center;
+  background-color: 1; /* Semi-transparent white background */
+}
+.imgdescribeAbout2 {
+  height: auto;
+  background-image: url('https://img.freepik.com/free-photo/abstract-geometric-computer-wallpaper-white-border-connecting-dots-digital-technology-vector-design_53876-160227.jpg?w=1060&t=st=1690564937~exp=1690565537~hmac=74b5b390c1d060faf2dacb0aa636cbeb0a16ff674443cc4889ef4b88292dcd0c');
+  background-size: cover;
+  background-position: center;
+  background-color: 0.1; /* Semi-transparent white background */
+}
+
 
 .ck-editor__editable_inline {
   height: 500px;
   border-radius: 15px;
 }
 
-.pagination li a,
-.pagination li span {
-  font-size: 14px;
-  padding: 8px 12px;
-}
 
-.footer2 {
-  background: #141169;
-  color: white;
-  text-align: center;
-  padding: 5px;
-}
-
-.footer1 {
-  background: #000001;
+.footerbreak1{
+  background-color: #000001;
   color: #cff306;
 }
 
-.footer1 .links ul {
-  list-style-type: none;
-  text-decoration: none;
-}
 
-.footer1 .links li a {
-  color: white !important;
-  text-decoration: none;
-  transition: color .2s;
-}
-
-.footer1 .links li a:hover {
-  text-decoration: none;
-  color: #4180CB !important;
-}
-
-.footer1 .about-company i {
-  font-size: 25px;
-}
-
-.footer1 .about-company a {
-  color: white;
-  transition: color .2s;
-}
-
-.footer1 .about-company a:hover {
-  color: #4180CB;
-}
-
-.footer1 .location i {
-  font-size: 18px;
-}
 
 .footer1 .copyright p {
   border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-.welcome-div img {
-  border: 1px solid black;
-  padding: 10px;
-}
 
-.post-content {
-  overflow: hidden;
-  line-height: 1.5em;
-  max-height: 15em;
-  text-overflow: ellipsis;
-}
 
-.read-more-link {
-  color: #3137a9;
-  font-weight: 800;
-  cursor: pointer;
-}
+
+
 
 .full-content {
   display: none;
