@@ -16,7 +16,10 @@
   <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/fugit" rel="stylesheet">
 
-  
+  <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+  <!-- sweet alert boostsrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- loadingIcon -->
                 
     <!-- {{-- ckeditor5 --}} --> 
   <!-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.1/classic/ckeditor.js"></script> -->
@@ -135,31 +138,35 @@
        <div class="row">
         <div class="p-3 container fw-bold shadow" style="background-color: bisque;border-radius: 20px;">
           <h5 class="col-md-12 col-sm-12 p-3 mb-2 text-center text-white" style="background-color: #71B48D;border-radius: 20px;">Your Message</h5>
-          <form>
+          <form id="contactForm" onsubmit="return handleSubmit(event);">
             <div class="row mb-3">
               <div class="col-md-6">
                 <label for="first_name" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="first_name" name="first_name" required>
+                <input type="text" class="form-control" id="First_name" name="first_name" required>
               </div>
               <div class="col-md-6">
                 <label for="last_name" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="last_name" name="last_name" required>
+                <input type="text" class="form-control" id="Last_name" name="last_name" required>
               </div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="Email" name="email" required>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject:</label>
-              <input type="text" class="form-control" id="subject" name="subject" required>
+              <input type="text" class="form-control" id="Subject" name="subject" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message:</label>
-              <textarea class="form-control" id="message" name="message" rows="8" required></textarea>
-            </div>
-            <button type="submit" id="btn" class="btn btn-primary p-3" style="border-radius: 20px;">Send Message</button>
-          </form>
+              <textarea class="form-control" id="Message" name="message" rows="8" required></textarea>
+            </div><button type="submit" id="submitButton" class="btn btn-primary p-3" style="border-radius: 20px;" onclick="handleSubmit(event)">
+              <span id="loadingIcon" style="display: none;">
+                <i class="fas fa-circle-notch fa-spin"></i>
+              </span>
+              Send Message
+            </button>
+            </form>
          
 
       </div>
@@ -257,6 +264,8 @@
 
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="mailscript.js"></script>
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+<script src="mailscript.js"></script>
 </body>
 </html>
