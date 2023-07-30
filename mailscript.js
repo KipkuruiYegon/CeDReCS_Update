@@ -45,7 +45,7 @@ function handleSubmit(event) {
       loadingIcon.style.display = "none"; // Hide the loading icon
 
       if (message === 'OK') {
-        swal("Success", "Your Message Successfully Received", "success").then(() => {
+        swal("Success", "Your Message was Successfully Received,  Our team will contact you", "success").then(() => {
           // Reset the form after successful submission
           document.getElementById("contactForm").reset();
         });
