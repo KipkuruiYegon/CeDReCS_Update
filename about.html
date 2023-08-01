@@ -16,8 +16,6 @@
   <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/fugit" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
-  <!-- sweet alert boostsrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!-- loadingIcon -->
                 
@@ -160,13 +158,15 @@
             <div class="mb-3">
               <label for="message" class="form-label">Message:</label>
               <textarea class="form-control" id="Message" name="message" rows="8" required></textarea>
-            </div><button type="submit" id="submitButton" class="btn btn-primary p-3" style="border-radius: 20px;" onclick="handleSubmit(event)">
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-primary p-3" style="border-radius: 20px;" onclick="handleSubmit(event)">
               <span id="loadingIcon" style="display: none;">
                 <i class="fas fa-circle-notch fa-spin"></i>
               </span>
               Send Message
             </button>
-            </form>
+          </form>
+          
          
 
       </div>
@@ -264,8 +264,8 @@
 
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="mailscript.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ function handleSubmit(event) {
     Host: "smtp.elasticemail.com",
     Username: "kevin.kipkurui@interns.dkut.ac.ke",
     Password: "929ECBE9F7A98443C45B57C642AAF8DCF0CA",
-    To: 'kevinyegon2015@gmail.com',
+    To: 'cedrecs@dkut.ac.ke, george.musumba@dkut.ac.ke, kevin.kipkurui@interns.dkut.ac.ke', // Update the "To" field with the email addresses separated by a comma
     From: "kevin.kipkurui@interns.dkut.ac.ke",
     Subject: sub,
     Body: body,
