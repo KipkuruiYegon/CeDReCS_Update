@@ -21,6 +21,16 @@
   opacity: ;
 }
 
+.imgdescribeforum {
+  height: 330px;
+  width: 10px;
+
+  background-size: cover;
+  background-position: center;
+  opacity: ;
+}
+
+
 
 .footerbreak1{
   background-color: black;
