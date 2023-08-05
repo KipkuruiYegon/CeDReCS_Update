@@ -21,21 +21,14 @@
   opacity: ;
 }
 
-.imgdescribeforum {
-  height: 330px;
-  width: 10px;
+.submitMessageButton:hover {
+  background-color: #007bff; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
 
-  background-size: cover;
-  background-position: center;
-  opacity: ;
-}
-.imgdescribeforumPage {
-  height: 350px;
-  width: auto;
-  background-size: cover;
-  background-position: center;
-  opacity: ;
-}
+
+
+
 
 
 
@@ -55,4 +48,5 @@
 .full-content {
   display: none;
 }
+/* Additional CSS styles for the fixed form */
 </style>
