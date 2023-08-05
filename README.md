@@ -1,1 +1,1 @@
-CeDReCS WenSite & Forum Project
+CeDReCS WebSite & Forum Project
