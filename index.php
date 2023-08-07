@@ -5,8 +5,7 @@
 include 'partials/header.php';
 ?>
 
-    <!-- welcome -->
-<div class="container-fluid video-container welcome-div p-5 mt-2 text-white text-center shadow justify-content-center" style="margin-top:; position: relative;">
+<div class="container-fluid video-container welcome-div p-5 mt-1 text-white text-center shadow justify-content-center" style="margin-top:; position: relative;height:300px;">
   <video src="assets/videos/abstract1.mp4" autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
   </video>
   <h1 class="display-4 mt-5 mb-3 font-weight-bold bg-secondary">Center for Data Research & Cyber Security</h1>
@@ -15,8 +14,13 @@ include 'partials/header.php';
 
 
 
-<div class="container-fluid bg-light">
-<div class="container-fluid mt-4 mb-4" style="opacity: 1;" >
+
+
+
+
+
+<div class="container-fluid bg-white">
+<div class="container-fluid mt-4 mb-4 " style="opacity: 1;" >
 
    <div class="row shadow text-center"  >
     <div class="col-sm-12 p-5 bg-white">

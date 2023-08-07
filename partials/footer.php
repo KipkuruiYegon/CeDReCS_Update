@@ -12,7 +12,7 @@
       <h4>Quick Links</h4>
       <p class="lead text-secondary"><i class="bi bi-newspaper" style="font-size: 2rem;"></i> <a href="" class="lead text-secondary">NewsLetter</a></p>
      <p class="lead text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="media.php" class="lead text-secondary">Gallery</a></p>
-     <p class="lead text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="media.php" class="lead text-secondary">Team</a></p>
+     <p class="lead text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="team.php" class="lead text-secondary">Team</a></p>
      
      <a type="button" class="p-2 btn btn-success text-white fw-bold" style="color:black;" href="forum/">CeDReCS Forum</a>
 

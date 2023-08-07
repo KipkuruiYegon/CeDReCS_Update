@@ -37,6 +37,15 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+.sitenavbarlist a:hover{
+    background-color: white;
+    text-decoration:black;
+    border-radius: 10px;
+    padding: auto 20px;;
+
+}
+
+
 </style>
 <body>
     <nav class="navbar shadow-sm navbar-expand-lg border-bottom " style="background-color: bisque;">
@@ -51,7 +60,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0 ms-auto " >
+        <ul class="navbar-nav ml-auto my-2 my-lg-0 ms-auto sitenavbarlist " >
               <li class="nav-item">
                 <a class="nav-link text-dark fw-bold" href="./index.php">Home</a>
               </li>

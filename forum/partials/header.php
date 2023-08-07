@@ -15,10 +15,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/fugit" rel="stylesheet">
-                
-    <!-- {{-- ckeditor5 --}} --> 
-  <!-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.1/classic/ckeditor.js"></script> -->
-</head>
+
+   </head>
 <style>
   @import url('https://fonts.cdnfonts.com/css/poppins');
 * {
@@ -29,6 +27,12 @@
 @import url('https://fonts.cdnfonts.com/css/fugit');
 {
   font-family: 'Fugit', sans-serif;
+}
+.forumnavbarlist a:hover{
+    background-color: white;
+    text-decoration:black;
+    border-radius: 10px;
+
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
@@ -48,7 +52,7 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
          
-            <ul class="navbar-nav ms-auto text-center mt-2 mt-lg-0">
+            <ul class="navbar-nav ms-auto text-center mt-2 mt-lg-0 forumnavbarlist">
                 <li class="nav-item">
                     <a class="nav-link text-dark p-3 fw-bold" href="index.php">Home</a>
                 </li>

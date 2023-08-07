@@ -1,24 +1,22 @@
 <style>
 
-.container-fluid {
-  max-width: 100%;
-  overflow: hidden;
-}
+
+
 
 .welcome-div {
-  height: 300px;
+  height: 450px;
   background-size: cover;
   background-position: center;
-  opacity: ;
 }
+
 
 .imgdescribe1 {
   height:200px;
-  width:;
+
 
   background-size: cover;
   background-position: center;
-  opacity: ;
+
 }
 
 .submitMessageButton:hover {
@@ -46,7 +44,39 @@
 
 
 .full-content {
-  display: none;
+  overflow-y: auto;
+}
+
+/* Responsive styles */
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 /* Additional CSS styles for the fixed form */
 </style>

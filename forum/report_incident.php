@@ -7,18 +7,76 @@ include 'partials/header.php';
 ?>
 
 
+<?php
+
+include("connect.php");
+
+// Initialize variables for messages
+$success_message = "";
+$error_message = "";
+
+// Check if the form is submitted
+if (isset($_POST['submit'])) {
+    // Retrieve form data and escape it
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $contact = mysqli_real_escape_string($conn, $_POST['contact']);
+    $organisation = mysqli_real_escape_string($conn, $_POST['organisation']);
+    $category = mysqli_real_escape_string($conn, $_POST['category']);
+    $incident_description = mysqli_real_escape_string($conn, $_POST['incident_description']);
+    $more_details = mysqli_real_escape_string($conn, $_POST['more_details']);
+    $agree_terms = isset($_POST['agree_terms']) ? 1 : 0;
+
+    // Prepare and execute the SQL query to insert the data into the table
+    $sql = "INSERT INTO incident_reports (name, email, contact, organisation, category, incident_description, more_details, agree_terms)
+            VALUES ('$name', '$email', '$contact', '$organisation', '$category', '$incident_description', '$more_details', '$agree_terms')";
+
+    if ($conn->query($sql) === TRUE) {
+        $success_message = "Your Report was submitted successfully.";
+    } else {
+        $error_message = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Close the database connection
+$conn->close();
+
+?>
+
 <div class="container-fluid mt-1 p-5 mb-3 text text-center " style="margin-top:;background-image:url(../assets/images/signalfloat.gif); height: 150px;">
  
   
 <h3  class="bg-secondary p-3 text-white text-center " style="border-radius: 15px;">Cyber Breach Encounters</h3>
+
+<h1>
+<div class="container mb-5 w-50 ">
+        <!-- Success alert -->
+        <?php if ($success_message !== ""): ?>
+            <div class="alert alert-success mb-5 ">
+                <?php echo $success_message; ?>
+                <i class="bi bi-hand-thumbs-up"></i>
+            </div>
+        <?php endif; ?>
+
+        <!-- Error alert -->
+        <?php if ($error_message !== ""): ?>
+            <div class="alert alert-danger mb-5">
+                <?php echo $error_message; ?>
+            </div>
+        <?php endif; ?>
+</div>
+</h1>
+
+
  
 </div>
 
   <div class="container-fluid bg-light mt-5">
 
     <div class="container bg-white shadow mb-2  p-3">
+    
       <h2 class="pt-1 text-center bg-dark text-white mb-2 w-100" style="font-family: Fugit;text-decoration:">Report a Cyber Breach Incident</h2>
-      <form class="mt-1 mb-1" action="submit_report.php" method="POST">
+      <form class="mt-1 mb-1" action="report_incident.php" method="POST">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label fw-bold ">Full Name (Optional)</label>
           <input name="name" type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

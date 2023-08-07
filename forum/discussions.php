@@ -22,12 +22,13 @@ include 'partials/header.php';
         include("connect.php");
     
         // Retrieve data from the "incident_reports" table
-        $sql = "SELECT * FROM incident_reports";
-        $result = $conn->query($sql);
-
+     // Retrieve data from the "incident_reports" table
+$sql = "SELECT * FROM incident_reports WHERE published = 1";
+$result = $conn->query($sql);
         // Check if there are any records
     if ($result->num_rows > 0) {
       while ($row = $result->fetch_assoc()) {
+        $id = $row['id'];
         $name = $row['name'];
         $date_created = $row['date_created']; // Replace 'date' with the actual column name for the date in your database
         $incident_description = $row['incident_description'];
@@ -37,12 +38,14 @@ include 'partials/header.php';
 
       echo '<h3 class="fw-bold" style="font-family: Fugit;"> 
       <img src="../assets/images/anonymous-profile-min.jpg" alt="Avatar Logo" style="width: 49px; height: 46px; border-radius: 50%;" class="rounded-circle img-fluid">
-      Anonymous , on ' . $formatted_date . '
+      Anonymous' . $id . ' , on ' . $formatted_date . '
       </h3>';
 
-      echo '<pre class="lead fw-medium" style="font-family: Fugit; font-size: large;word-wrap: break-word;white-space: pre-wrap;">' . $incident_description . '....</pre>';
+      echo '<pre class="lead fw-medium" style="font-family: Fugit; font-size:large;word-wrap: break-word;white-space: pre-wrap;">' . nl2br($incident_description) . '</pre>';
       
-      echo '<a type="button" id="backButton" class="p-2 btn btn-success btn-back text-white text-center btn-block w-25 mb-5" style="font-size: medium;border-radius: 80px;" href="discussion_reply.php">Read More</a>';
+      echo '<td>
+          <a type="button" class="btn btn-primary p-3 rounded-pill w-25" href="discussion_read.php?id=' . $id . '">Read More</a>
+         </td>';
       
       echo '<hr>';
     }

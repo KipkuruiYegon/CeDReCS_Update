@@ -6,7 +6,8 @@
 include 'partials/header.php';
 ?>
 
-<div class="container-fluid video-container welcome-div p-5 mt-2 text-white text-center shadow justify-content-center" style="margin-top:; position: relative;height:auto">
+  <!-- welcome -->
+  <div class="container-fluid video-container welcome-div p-5 mt-1 text-white text-center shadow justify-content-center" style="margin-top:; position: relative;height:auto">
   <video src="../assets/videos/abstract2.mp4" autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
   </video>
   <h1 class="display-4 mt-5 mb-3 font-weight-bold bg-success">CeDReCS Cyber Breach Forum</h1>
@@ -15,8 +16,8 @@ include 'partials/header.php';
 
 
 
-  <div class="container-fluid bg-light" style="padding-top: 70px;">
-    <div class="container mb-5">
+  <div class="container-fluid bg-white" style="padding-top: 70px;">
+    <div class="container mb-5 bg-white">
       <h2 class="" style="font-family: Fugit;">Our Platform</h2>
       <p class="lead fw-medium" style="font-family: Fugit; font-size: large;">
         
