@@ -1,14 +1,16 @@
 <?php
 // index.php or other_php_files.php
 
+
+
 // Include the header.php file
 include 'partials/header.php';
 ?>
 
-  <div class="container-fluid pt-5" style="background-color:bisque;" >
+  <div class="container-fluid pt-5 " style="background-color:bisque;" >
     <div class="container-fluid ">
-    <div class="row" style="background-color:blue;"  >
-    <div class="col-lg-auto  container-fluid "  >
+    <div class="row" style="background-color:green;"  >
+    <div class="col-lg-auto container-fluid "  >
       <h3 class="fw-bold text-center" style="font-family: Fugit;text-decoration:underline" ></h3>
 
     </div>
@@ -16,7 +18,7 @@ include 'partials/header.php';
     
       <div class="container-fluid col-lg-12  bg-white">
       
-<h2 class="mt-2 shadow-sm p-3 bg-secondary w-25 rounded-pill text-white " style="text-decoration:;">Received Reports <i class="bi bi-envelope-plus" style="font-size:2.5rem"></i></h2>
+      <h2 class="mt-2 shadow-sm p-3 bg-danger w-25 rounded text-white " style="text-decoration:;">Received Reports <i class="bi bi-arrow-left-right" style="font-size: 2.5rem;"></i></h2>
 
 
     <form class="form-inline my-2 p-1 mt-5 my-lg-0 ms-auto">
@@ -30,17 +32,17 @@ include 'partials/header.php';
 include("../connect.php");
 
 // Retrieve data from the "incident_reports" table
-$sql = "SELECT * FROM incident_reports";
+$sql = "SELECT * FROM incident_reports ";
 $result = $conn->query($sql);
 
 // Check if there are any records
 if ($result->num_rows > 0) {
   // Start the table outside the while loop
-  echo '<div class="container col-md-12 shadow mb-3">
+  echo '<div class="container-fluid col-md-12 mb-3 shadow">
   <table class="table table-bordered table-hover bg-white ">
           <thead class="">
             <tr>
-              <th class="b" scope="col">#</th>
+              <th class="b" scope="">Report #</th>
               <th class="" scope="col">Profile</th>
               <th class="" scope="col">Name</th>
               <th class="" scope="col">Email</th>
@@ -79,12 +81,13 @@ if ($result->num_rows > 0) {
             <td>' . $category . '</td>
             <td>' . $formatted_date . '</td>
             <td class="text-center">
-            <span class="badge ' . ($published == 1 ? 'bg-success' : 'bg-warning') . ' btn">' . ($published == 1 ? 'Yes <i class="bi bi-check-all"></i>' : 'No <i class="bi bi-x-circle-fill"></i>') . '</span>
+            <span class="badge ' . ($published == 1 ? 'bg-success' : 'bg-warning') . ' btn">' . ($published == 1 ? 'Yes  <i class="bi bi-check-all"></i>' : 'No <i class="bi bi-x-circle-fill"></i>') . '</span>
+           
           </td>
-
-            <td>
+          <td>
             <a type="button" class="btn btn-primary btn-sm" href="./view_report_details.php?id=' . $id . '">View</a>
           </td>
+            
 
           </tr>';
   }
@@ -102,7 +105,7 @@ $conn->close();
 ?>
 
 
-<p class="text-center fw-bold">.. end of list ..</p>
+<p class="text-center">end of list</p>
       </div>
   
 

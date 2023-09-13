@@ -5,7 +5,7 @@
 include 'partials/header.php';
 ?>
 
-<div class="container-fluid mt-2 p-5 text text-center d-flex justify-content-center " style="margin-top:;background-image:url(../assets/images/signalfloat.gif);">
+<div class="container-fluid mt-1 p-5 text text-center d-flex justify-content-center " style="margin-top:;background-image:url(../assets/images/signalfloat.gif);">
  
   
   <h3  class="bg-warning p-3 text-black text-center w-75 fw-bold " style="border-radius: 15px;Font-family:Fugit;">Get to hear & learn from untold Cyber Breach stories</h3>

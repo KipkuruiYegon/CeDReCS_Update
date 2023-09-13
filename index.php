@@ -10,6 +10,7 @@ include 'partials/header.php';
   </video>
   <h1 class="display-4 mt-5 mb-3 font-weight-bold bg-secondary">Center for Data Research & Cyber Security</h1>
   <p class="lead " style="font-style:italic;">Empowering Data. Securing the Future.</p>
+
 </div>
 
 
@@ -47,25 +48,31 @@ include 'partials/header.php';
  
   <div class="col-sm-6 p-5 bg-white">
     <h2 class="fw-bold text-center" style="font-family: Fugit;" >Data Research</h2>
-    <p class="lead">
-      At CeDReCS, we cover every aspect of the data lifecycle. From collecting and analyzing data
+    <p class="lead fw-600 ">
+      At CeDReCS, we cover every aspect of the data lifecycle.  From collecting and analyzing data
       to managing, governing, and securing it, our focus is on advancing data research. By harnessing
       the power of data science, collaborating across disciplines, and forming industry partnerships,
       we strive to drive innovation, tackle societal challenges, and build a secure, data-driven digital
       ecosystem for the future.
     </p>
+    <!-- <div class="d-flex justify-content-center shadow-lg rounded p-5 mt-5" >
+    <img src="assets/images/automation.png" class="img-fluid" style="width: 250px;height:250px" >
+    </div> -->
+    
   
   </div>
 
 <div class="col-sm-6 p-5 bg-white">
-
-  
+<!-- <div class="d-flex justify-content-center mb-5 shadow rounded p-5" >
+    <img src="assets/images/innovation.png" class="img-fluid" style="width: 250px;height:250px" >
+    </div> -->
     <h2 class="fw-bold text-center" style="font-family: Fugit;">Cyber Security</h2>
-    <p class="lead">
+    <p class="lead ">
       We are committed to cutting-edge research and innovation in the field of cyber security. Our dedicated team focuses
        on advancing knowledge, developing practical solutions, and conducting interdisciplinary research to address the 
        evolving landscape of cyber threats. Our initiatives span various domains within cyber security, including network
         security, endpoint protection, threat intelligence, incident response, and secure software development.
+        <br>
     </p>
 
 </div> 
@@ -77,26 +84,35 @@ include 'partials/header.php';
 
   <div class="row shadow" >
  
-
-    <!-- <div class="col-sm-4 p-5 imgdescribe2">
-    
-    </div> -->
-    
     <div class="col-sm-12 p-5 bg-white">
       <h2 class="fw-bold" style="font-family: Fugit;">Knowledge Dissemination</h2>
       <p class="lead">We are committed to sharing our knowledge and expertise with the wider community. Through our website, we provide a platform to disseminate research findings
          thought leadership articles, practical insights, and industry best practices. We also organize workshops, seminars, and conferences to engage with professionals, students, 
          and the public, fostering knowledge exchange and driving the conversation around cyber security and data research.
-      </p>
+       
+    
+      
+        </p>
+      
+     
     
     </div>
+    
+
+     <!-- <div class="col-sm-4 p-5 imgdescribe2 shadow p-5 rounded">
+        <div class="d-flex justify-content-center" >
+    <img src="assets/images/data.png" class="img-fluid" style="width: 250px;height:250px" >
+    </div>
+    
+    </div>  -->
+    
     
     </div>
     <br>
 <div class="row shadow" >
   <!-- Section 1 -->
   <div class="col-md-4 p-5 bg-white img-welcome">
-    <h2><i class="bi bi-people-fill"style="font-size: 2rem;"></i> Core Values</h2>
+    <h2><i class="bi bi-people-fill"style="font-size: 2rem;"></i>  Core Values</h2>
     <p class="lead">Our core values of excellence, integrity, collaboration, innovation, and social responsibility guide
       our work. We strive for the highest standards in research and cybersecurity practices, uphold ethical principles,
       foster interdisciplinary collaboration, embrace innovation, and address societal challenges.</p>
@@ -105,14 +121,14 @@ include 'partials/header.php';
   <div class="col-md-4 p-5 bg-white img-welcome">
 
    
-    <h2><i class="bi bi-globe-europe-africa" style="font-size: 2rem;"></i> Vision</h2>
+    <h2><i class="bi bi-globe-europe-africa" style="font-size: 2rem;"></i>  Vision</h2>
     <p class="lead">To be a globally recognized hub of excellence in data research, data governance, and cyber security, driving
       transformative advancements and ensuring a secure and trustworthy digital future.</p>
     <!-- image her -->
   </div>
   <div class="col-md-4 p-5 bg-white img-welcome">
 
-    <h2><i class="bi-cpu-fill" style="font-size: 2rem;"></i> Mission</h2>
+    <h2><i class="bi-cpu-fill" style="font-size: 2rem;"></i>  Mission</h2>
     <p class="lead">
       To advance knowledge and innovation in data research, data governance, and cyber security, through cutting-edge
       research, interdisciplinary collaboration, and the development of practical applications, to address societal
@@ -141,19 +157,20 @@ include 'partials/header.php';
         <div class="row text-center align-items-center">
          
          
+        <div class="col-sm-12 col-md-3">
+            <img class="img-fluid" src="assets/images/Africa Blockchain.png" alt="Africa Blockchain">
+          </div>
           <div class="col-sm-12 col-md-3">
-            <img class="img-fluid" src="assets/images/networking Academy Cisco.png" alt="Cisco Image">
+            <img class="img-fluid" src="assets/images/yelbridges logo_page-0001.jpg" alt="yelbridges logo_page-0001">
           </div>
           <div class="col-sm-12 col-md-3">
             <img class="img-fluid" src="assets/images/huaweilogo.png" alt="Huawei Logo">
           </div>
           <div class="col-sm-12 col-md-3">
-            <img class="img-fluid" src="assets/images/Siemens-Logo.png" alt="Siemens Logo">
+            <img class="img-fluid" src="assets/images/networking Academy Cisco.png" alt="Cisco Image">
           </div>
-          
-          <div class="col-sm-12 col-md-3">
-            <img class="img-fluid" src="assets/images/dedanlogo-removebg-preview.png" alt="Dekut logo">
-          </div>
+         
+        
           
         </div>
       </div>

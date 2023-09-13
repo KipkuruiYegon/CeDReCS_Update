@@ -1,7 +1,12 @@
 <!-- edit_report.php -->
 
 <!-- Include the header.php file -->
-<?php include 'partials/header.php'; ?>
+<?php include
+
+
+
+'partials/header.php';
+?>
 
 <div class="container-fluid bg-white pt-3">
   <div class="container-fluid">

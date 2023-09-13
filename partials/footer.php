@@ -14,7 +14,7 @@
      <p class="lead text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="media.php" class="lead text-secondary">Gallery</a></p>
      <p class="lead text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="team.php" class="lead text-secondary">Team</a></p>
      
-     <a type="button" class="p-2 btn btn-success text-white fw-bold" style="color:black;" href="forum/">CeDReCS Forum</a>
+     <a type="button" class="p-2 btn btn-success fw-bold" style="" href="forum/">CeDReCS Forum</a>
 
     </div>
     

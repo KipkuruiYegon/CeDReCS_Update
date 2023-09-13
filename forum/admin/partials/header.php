@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,7 +71,7 @@ color: black; /* Set the color for the active link */
          
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0 adminnavbarlist">
             <li class="nav-item" >
-                    <a class="nav-link text-white p-3   me-3" href="">Dashboard <i class="bi bi-speedometer"></i></a>
+                    <a class="nav-link text-white p-3   me-3" href="./dashboard.php">Dashboard <i class="bi bi-speedometer"></i></a>
             </li>
            
               <li class="nav-item">
@@ -88,7 +89,7 @@ color: black; /* Set the color for the active link */
                
                
                 <li class="nav-item">
-                    <a class="nav-link text-white p-3 fw-bold rounded" style="background-color: #43B929;" href="">Log Out <i class="bi bi-box-arrow-left"></i></a>
+                    <a class="nav-link text-white p-3 fw-bold rounded" style="background-color: #43B929;" href="logout.php">Log Out <i class="bi bi-box-arrow-left"></i></a>
                 </li>
             </ul>
            

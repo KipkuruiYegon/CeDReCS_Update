@@ -1,6 +1,8 @@
 <?php
 // index.php or other_php_files.php
 
+
+
 // Include the header.php file
 include 'partials/header.php';
 ?>
@@ -16,7 +18,7 @@ include 'partials/header.php';
     
       <div class="container-fluid col-lg-12  bg-white">
       
-      <h2 class="mt-2 shadow-sm p-3 bg-success w-25 rounded-pill text-white " style="text-decoration:;">Published Reports <i class="bi bi-ubuntu" style="font-size: 2.5rem;"></i></h2>
+      <h2 class="mt-2 shadow-sm p-3 bg-success w-25 rounded text-white " style="text-decoration:;">Published Reports <i class="bi bi-ubuntu" style="font-size: 2.5rem;"></i></h2>
 
 
     <form class="form-inline my-2 p-1 mt-5 my-lg-0 ms-auto">

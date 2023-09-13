@@ -1,4 +1,11 @@
 <?php
+
+
+
+
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Check if the report_id is provided in the POST request
   if (isset($_POST['report_id'])) {
