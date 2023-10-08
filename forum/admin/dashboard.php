@@ -1,17 +1,22 @@
 <?php
-// index.php or other_php_files.php
+// Start or resume the session
+session_start();
 
-require_once 'session.php';
+// Check if the user is not logged in, then redirect to the login page
+if (!isset($_SESSION["admin_usersid"]) || empty($_SESSION["admin_usersid"])) {
+    header("location: index.php");
+    exit;
+}
 // Include the header.php file
 include 'partials/header.php';
+
 ?>
 
  <div class="container">
 
  
- <div class="alert alert-warning mt-5" role="alert">
-    Hello, <?php echo $_SESSION["username"] ?>, welcome back!
- </div>
+ 
+
     
         <div class="row mt-5 mb-5 text-center">
 

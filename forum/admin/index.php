@@ -1,23 +1,29 @@
 <?php
-
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-
+// Start the session at the very beginning
+session_start();
 
 require_once "../connect.php";
 
-
 $error = '';
+
+// Start output buffering
+ob_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
 
-    // Validate if email is empty
+    // Validate if email is empty and format is valid
     if (empty($email)) {
         $error .= '<div class="alert alert-secondary" role="alert">
         Please enter email.
+      </div>';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error .= '<div class="alert alert-secondary" role="alert">
+        Please enter a valid email address.
       </div>';
     }
 
@@ -32,23 +38,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
         if ($query = $conn->prepare("SELECT * FROM admin_users WHERE email = ?")) {
             $query->bind_param('s', $email);
             $query->execute();
-            
+
             // Fetch the user data
             $result = $query->get_result();
-            
+
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
-                
+
                 if (password_verify($password, $row['password_hash'])) {
                   $_SESSION["admin_usersid"] = $row['id'];
                   $_SESSION["admin_user"] = $row;
-                  $_SESSION["admin_user"] = $row['username']; // Set the username session variable
+                  $_SESSION["username"] = $row['username'];
+
+                  // Clean and flush the output buffer
+                  ob_end_clean();
+                  
                   // Redirect user to dashboard page
                   header("location: dashboard.php");
                   exit;
               } else {
-                    $error .= '<p class="error text-primary">Incorrect password</p>';
-                }
+                  $error .= '<p class="error text-primary">Incorrect password, try again!</p>';
+              }
+              
             } else {
                 $error .= '<p class="error text-primary">Email address not found.</p>';
             }
@@ -60,10 +71,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     mysqli_close($conn);
 }
 
-
-
-
+// End output buffering and display the captured output
+ob_end_flush();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -124,6 +135,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             <img src="../../assets/images/dedanlogo-removebg-preview.png" alt="Avatar Logo"
               style="width: 62px; height: 56px; border-radius: 50%;" class="rounded-circle img-fluid">
           </h1>
+             <!-- Display errors -->
+<div class="error-container text-center ">
+    <?php echo $error; ?>
+</div>
           <div class="p-3 mt-4 container fw-bold shadow justify-content-right" style="background-color: bisque;">
             <form method="POST">
               <div class="mb-3">
@@ -145,6 +160,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 </span>
             </form>
           </div>
+
+       
+
         </div>
       </div>
     </div>

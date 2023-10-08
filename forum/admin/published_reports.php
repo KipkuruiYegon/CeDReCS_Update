@@ -1,8 +1,12 @@
 <?php
-// index.php or other_php_files.php
+// Start or resume the session
+session_start();
 
-
-
+// Check if the user is not logged in, then redirect to the login page
+if (!isset($_SESSION["admin_usersid"]) || empty($_SESSION["admin_usersid"])) {
+    header("location: index.php");
+    exit;
+}
 // Include the header.php file
 include 'partials/header.php';
 ?>
