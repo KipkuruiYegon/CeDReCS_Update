@@ -2,95 +2,108 @@
 <html lang="en">
 
 <head>
-  <title>CeDReCS - DeKUT</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>CeDReCS - DeKUT </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <link rel="icon" type="image/x-icon" href="./assets/images/dedanlogo-removebg-preview.png">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/dedanlogo-removebg-preview.png">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/fugit" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- alert -->
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!-- loadingIcon -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <style>
-  @import url('https://fonts.cdnfonts.com/css/poppins');
-* {
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;                                            
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/fugit');
-{
-  font-family: 'Fugit', sans-serif;
-}
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
-.sitenavbarlist a:hover{
-    background-color: white;
-    text-decoration:black;
-    border-radius: 10px;
-    padding: auto 20px;;
-
-}
-
-
+    body {
+        /* font-family: 'Montserrat', sans-serif; */
+        /* font-family: 'Montserrat Alternates', sans-serif; */
+        /* font-family: 'PT Sans', sans-serif; */
+        font-family: 'Raleway', sans-serif;
+        /* font-family: 'Rubik', sans-serif; */
+    }
 </style>
-<body>
-    <nav class="navbar shadow-sm navbar-expand-lg border-bottom " style="background-color: bisque;">
-        <div class="container-fluid">
-         
-          <a class="navbar-brand display fw-bold " style="font-size: 32px;" href="">
-            <img src="./assets/images/logo_transparent.png" alt="Avatar Logo" style="width:100px;height: 80px;" class="rounded-circle ">
-            CeDReCS<span class="fw-bold" style="font-family: Fugit;"> - DeKUT</span>
-          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0 ms-auto sitenavbarlist " >
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="./index.php">Home</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-bold" href="./programmes.php">Programmes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark   fw-bold" href="./publications.php">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark  fw-bold" href="./downloads.php">Downloads</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-bold" href="./media.php">Media</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-bold" href="./about.php">About Us</a>
-          </li>
-          <!-- <li class="nav-item">
-            <button type="button" class="p-2 btn btn-warning text-dark fw-bold">Join Our Community !</button>
-          </li> -->
-        </ul>
-        <form class="form-inline my-2 my-lg-0 ms-auto">
-          <div class="input-group w-100">
-           
-            <input class="form-control bg-white shadow " type="text" placeholder="Search..." style="border-radius: 15px;width: 300px;">
-            <button class="btn fw-bold fw-bold" type="submit"><i class="bi bi-search fw-bold" style="font-size: 1.5rem;"></i></button>
-           </div>
-          </form>
-        
-      </div>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
     </div>
-  </nav>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="  container-fluid main-navigation fixed-top border-bottom shadow-sm bg-white ">
+        <div class="container-fluid bg-secondary rounded py-0 d-none d-md-flex ">
+            <div class="container ">
+                <div class="d-flex justify-content-between topbar ">
+                    <div class="top-info">
+                        <small class="me-3 text-white"><a href="#"><i class="fas fa-map-marker-alt me-2 text-white"></i></a>Dedan Kimathi University</small>
+                        <small class="me-3 text-white"><a href="#"><i class="fas fa-envelope me-2 text-white"></i></a>cedrecs@dkut.ac.ke</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary fw-bold d-block">CeD<span class="text-dark">ReCS</span> </h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0 fw-bold">
+                        <a href="index.php" class="nav-item nav-link  text-dark">Home</a>
+                        <a href="about.php" class="nav-item nav-link  text-dark">About</a>
+                        <a href="programmes.php" class="nav-item nav-link  text-dark">Programmes</a>
+                        <a href="downloads.php" class="nav-item nav-link  text-dark">Downloads</a>
+                        <a href="publications.php" class="nav-item nav-link  text-dark">Publications</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle  text-dark" data-bs-toggle="dropdown">Media</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="blog.php" class="dropdown-item">Blog & News</a>
+                                <a href="about.php" class="dropdown-item">Our Team</a>
+                                <a href="https://cedrecsforumdkut.co.ke/" class="dropdown-item">CeDReCS forum</a>
+                                <!-- <a href="team.html" class="dropdown-item">Projects</a> -->
+                                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a> -->
+                            </div>
+                        </div>
+                        <a href="contact.php" class="nav-item nav-link  text-dark">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+
+
+                    <div class="d-flex align-items-center justify-content-center ms-4 ">
+                        <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
